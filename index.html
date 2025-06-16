@@ -1,2 +1,95 @@
 <!DOCTYPE html>
-<html><body><h1>Hello, world!</h1></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf‑8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Portfolio</title>
+
+  <!--  Google Font similar to the referenced site’s typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
+
+  <!--  Stylesheet  -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!--  Custom cursor element (optional) -->
+  <div id="cursor"></div>
+
+  <!--  Sticky navigation  -->
+  <header class="navbar">
+      <nav>
+        <a href="#hero">Home</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+  </header>
+
+  <!--  Hero / intro  -->
+  <section id="hero" class="section hero">
+    <h1 class="hero__title">Your&nbsp;Name</h1>
+    <p class="hero__tagline">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+    </p>
+  </section>
+
+  <!--  Work grid  -->
+  <section id="work" class="section work">
+      <h2 class="section__title">Selected Work</h2>
+
+      <div class="work__grid">
+        <!-- Repeat .work__item as needed -->
+        <article class="work__item reveal">
+          <a href="#" class="work__link" aria-label="Project Title">
+            <img src="https://source.unsplash.com/800x600?tech" alt="Placeholder image">
+            <div class="work__overlay">
+              <h3>Project Title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+          </a>
+        </article>
+
+        <article class="work__item reveal">
+          <a href="#" class="work__link" aria-label="Project Title">
+            <img src="https://source.unsplash.com/800x600?design" alt="Placeholder image">
+            <div class="work__overlay">
+              <h3>Project Title</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- Add more items ... -->
+      </div>
+  </section>
+
+  <!--  About  -->
+  <section id="about" class="section about">
+    <h2 class="section__title">About Me</h2>
+    <p class="about__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat mattis eros. 
+      Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+    </p>
+  </section>
+
+  <!--  Contact  -->
+  <section id="contact" class="section contact">
+    <h2 class="section__title">Get in Touch</h2>
+    <a href="mailto:hello@example.com" class="contact__email">hello@example.com</a>
+    <ul class="contact__social">
+      <li><a href="#" aria-label="Twitter">Twitter</a></li>
+      <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+      <li><a href="#" aria-label="GitHub">GitHub</a></li>
+    </ul>
+  </section>
+
+  <!--  Footer  -->
+  <footer class="footer">
+    <small>&copy; <span id="year"></span> Your Name. All rights reserved.</small>
+  </footer>
+
+  <!--  JavaScript  -->
+  <script src="js/main.js"></script>
+</body>
+</html>
