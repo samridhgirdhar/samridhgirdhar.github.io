@@ -1,95 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf‑8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name | Portfolio</title>
-
-  <!--  Google Font similar to the referenced site’s typography -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&display=swap" rel="stylesheet">
-
-  <!--  Stylesheet  -->
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Samridh Girdhar | Software Engineer</title>
+    <meta name="description" content="I'm helping brands leverage technology to create digital experiences that resonate with both audiences and business objectives.">
+    
+    <!-- Custom font loading similar to original -->
+    <style>
+        @font-face {
+            font-family: 'HelveticaNow';
+            src: url('data:font/woff2;base64,') format('woff2');
+            font-weight: 400;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'HelveticaNow';
+            src: url('data:font/woff2;base64,') format('woff2');
+            font-weight: 500;
+            font-display: swap;
+        }
+    </style>
+    
+    <!-- Fallback to system fonts that closely match Helvetica Now -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!--  Custom cursor element (optional) -->
-  <div id="cursor"></div>
-
-  <!--  Sticky navigation  -->
-  <header class="navbar">
-      <nav>
-        <a href="#hero">Home</a>
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-  </header>
-
-  <!--  Hero / intro  -->
-  <section id="hero" class="section hero">
-    <h1 class="hero__title">Your&nbsp;Name</h1>
-    <p class="hero__tagline">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-    </p>
-  </section>
-
-  <!--  Work grid  -->
-  <section id="work" class="section work">
-      <h2 class="section__title">Selected Work</h2>
-
-      <div class="work__grid">
-        <!-- Repeat .work__item as needed -->
-        <article class="work__item reveal">
-          <a href="#" class="work__link" aria-label="Project Title">
-            <img src="https://source.unsplash.com/800x600?tech" alt="Placeholder image">
-            <div class="work__overlay">
-              <h3>Project Title</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+    <div id="__next">
+        <main>
+            <div class="page">
+                <main class="main-content content">
+                    <div class="name">Samridh Girdhar</div>
+                    
+                    <p class="intro-text">I mostly convince computers to cooperate sometimes it works, sometimes it doesn't.</p>
+                    
+                    <p class="company-info">
+                        Software Engineer at <a href="https://www.natwestgroup.com/" target="_blank" rel="noopener noreferrer">Natwest Group</a>,<br>
+                        Former SDE Intern at <a href="https://azure.microsoft.com/en-gb/" target="_blank" rel="noopener noreferrer">Microsoft</a>.
+                    </p>
+                    
+                    <div class="contact-links">
+                        <a href="mailto:samridhgirdhar@gmail.com" target="_blank" rel="noopener noreferrer">Email</a><br>
+                        <a href="https://read.cv/baptiste" target="_blank" rel="noopener noreferrer">CV</a><br>
+                        <a href="https://github.com/samridhgirdhar" target="_blank" rel="noopener noreferrer">Github</a><br>
+                        <a href="https://www.linkedin.com/in/samridhgirdhar" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                    
+                    <div class="grid">
+                        <a href="https://i-d.co" target="_blank" rel="noopener noreferrer" class="project js-el">
+                            <div class="project-asset">
+                                <video class="project-video" 
+                                       src="https://player.vimeo.com/external/368674346.sd.mp4?s=ab3f68&profile_id=165" 
+                                       loop muted preload="none" playsinline></video>
+                            </div>
+                            <div class="project-meta">
+                                <div class="project-title">i-D Magazine</div>
+                                <p>Antinomy collaborated closely with Bedford Media to bring i-D Magazine back to life with a newly revamped website. The new i-D.co adopts a visually-driven approach, embodying the essence of what i-D has always stood for: striking imagery and compelling storytelling, as Karlie Kloss, founder and chairwoman of Bedford Media, said.</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://neonrated.com" target="_blank" rel="noopener noreferrer" class="project js-el">
+                            <div class="project-asset">
+                                <video class="project-video" 
+                                       src="https://player.vimeo.com/external/399137091.sd.mp4?s=bfec7&profile_id=165" 
+                                       loop muted preload="none" playsinline></video>
+                            </div>
+                            <div class="project-meta">
+                                <div class="project-title">NEON Rated</div>
+                                <p>27b designed and developed NEON's digital home—an immersive platform that showcases their award-winning films and offers exclusive merchandise drops. Built with a custom headless Shopify setup and powered by Next.js and Vercel, the site delivers high-performance streaming, e-commerce, and editorial experiences in one seamless interface. Trompe-l'œil.</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://singsing.movie" target="_blank" rel="noopener noreferrer" class="project js-el">
+                            <div class="project-asset">
+                                <video class="project-video" 
+                                       src="https://player.vimeo.com/external/368674346.sd.mp4?s=ab3f68&profile_id=165" 
+                                       loop muted preload="none" playsinline></video>
+                            </div>
+                            <div class="project-meta">
+                                <div class="project-title">Sing Sing</div>
+                                <p>27b collaborated with A24 on the release of SING SING. Learn about Rehabilitation Through the Arts, The Just Trust and watch the trailer at singsing.movie.</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://anora.neonrated.com" target="_blank" rel="noopener noreferrer" class="project js-el">
+                            <div class="project-asset">
+                                <video class="project-video" 
+                                       src="https://player.vimeo.com/external/399137091.sd.mp4?s=bfec7&profile_id=165" 
+                                       loop muted preload="none" playsinline></video>
+                            </div>
+                            <div class="project-meta">
+                                <div class="project-title">Anora</div>
+                                <p>Let's go to the ATM! Exclusive ANORA merch drop—powered by Next.js, Vercel, and Shopify.</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://archive.ferrari.antinomy.studio" target="_blank" rel="noopener noreferrer" class="project js-el">
+                            <div class="project-asset">
+                                <video class="project-video" 
+                                       src="https://player.vimeo.com/external/368674346.sd.mp4?s=ab3f68&profile_id=165" 
+                                       loop muted preload="none" playsinline></video>
+                            </div>
+                            <div class="project-meta">
+                                <div class="project-title">Ferrari Movie</div>
+                                <p>Unveiled an exclusive behind-the-scenes look into Michael Mann's new Ferrari movie. In life, when a thing works better, usually it is more beautiful to the eye.</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://pearlspeepshow.com" target="_blank" rel="noopener noreferrer" class="project js-el">
+                            <div class="project-asset">
+                                <video class="project-video" 
+                                       src="https://player.vimeo.com/external/399137091.sd.mp4?s=bfec7&profile_id=165" 
+                                       loop muted preload="none" playsinline></video>
+                            </div>
+                            <div class="project-meta">
+                                <div class="project-title">Pearl's Peep Show</div>
+                                <p>Inspired by 'Pearl' and the world of 'X', A24 presents a collection of X-rated American stag films from the early 20th century for your viewing pleasure.</p>
+                            </div>
+                        </a>
+                    </div>
+                </main>
+                
+                <footer class="footer content">
+                    <div>
+                        <a href="mailto:samridhgirdhar@gmail.com" target="_blank" rel="noopener noreferrer">Email</a><br>
+                        <a href="https://read.cv/baptiste" target="_blank" rel="noopener noreferrer">CV</a><br>
+                        <a href="https://github.com/samridhgirdhar" target="_blank" rel="noopener noreferrer">Github</a><br>
+                        <a href="https://www.linkedin.com/in/samridhgirdhar" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                </footer>
             </div>
-          </a>
-        </article>
+        </main>
+    </div>
 
-        <article class="work__item reveal">
-          <a href="#" class="work__link" aria-label="Project Title">
-            <img src="https://source.unsplash.com/800x600?design" alt="Placeholder image">
-            <div class="work__overlay">
-              <h3>Project Title</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur.</p>
-            </div>
-          </a>
-        </article>
+    <!-- Enhanced smooth scrolling -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    
+    <style>
+        /* Reset and base styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            font-size: 13px;
+        }
+        
+        body {
+            font-family: 'HelveticaNow', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 1rem;
+            line-height: 2.00;
+            color: #333;
+            background: #f8f8f8;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Layout */
+        .page {
+            position: static;
+        }
+        
+        .content {
+            max-width: 520px;
+            margin: 0;
+            margin-left: clamp(3.5rem, 32.5vw, 500px);
+            padding: 0 1.5rem 6rem;
+        }
+    
 
-        <!-- Add more items ... -->
-      </div>
-  </section>
+        
+        .main-content {
+            padding-top: 3rem;
+        }
+        
+        /* Typography - Adjusted sizes and colors */
+        .name {
+            margin-top:6.5rem;
+            font-size: 0.85rem;
+            font-weight: 550;
+            line-height: 2.00;
+            margin-bottom: 1.5rem;
+            color: #000;
+        }
+        
+        .intro-text {
+            font-size: 0.85rem;
+            font-weight: 400;
+            line-height: 1.90;
+            margin-bottom: 1.6rem;
+            max-width: 32ch;
+            color: #000;
+        }
+        
+        .company-info {
+            margin-top:2rem;
+            font-size: 0.85rem;
+            font-weight: 400;
+            line-height: 2.00;
+            margin-bottom: 2rem;
+            color: #000;
+        }
+        
+        .contact-links {
+            font-size: 0.85rem;
+            font-weight: 500;
+            line-height: 1.60;
+            margin-bottom: 0;
+            
+        }
+        
+        .contact-links a {
+            display: inline-block;
+            margin-bottom: 0.15rem;
+            text-decoration: underline !important;
+            border-bottom: none !important;
+        }
+        
+        /* Links */
+        a {
+            color: #000;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+        
+        a:hover {
+            border-bottom-color: currentColor;
+        }
+        
+        .company-info a {
+            color: #000;
+        }
+        
+        /* Grid layout */
+        .grid {
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+        
+        /* Project styling */
+        .project {
+            display: block;
+            color: inherit;
+            border: none;
+            padding-bottom: 2rem;                  /* space before the line */
+            border-bottom: 1px solid #e1e1e1;      /* hairline divider */
+            
 
-  <!--  About  -->
-  <section id="about" class="section about">
-    <h2 class="section__title">About Me</h2>
-    <p class="about__text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat mattis eros. 
-      Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
-    </p>
-  </section>
-
-  <!--  Contact  -->
-  <section id="contact" class="section contact">
-    <h2 class="section__title">Get in Touch</h2>
-    <a href="mailto:hello@example.com" class="contact__email">hello@example.com</a>
-    <ul class="contact__social">
-      <li><a href="#" aria-label="Twitter">Twitter</a></li>
-      <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
-      <li><a href="#" aria-label="GitHub">GitHub</a></li>
-    </ul>
-  </section>
-
-  <!--  Footer  -->
-  <footer class="footer">
-    <small>&copy; <span id="year"></span> Your Name. All rights reserved.</small>
-  </footer>
-
-  <!--  JavaScript  -->
-  <script src="js/main.js"></script>
+        }
+        
+        .project:hover {
+            border: none;
+        }
+        
+        .project-asset {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            border-radius: 8px;
+            background: #e5e5e5;
+            margin-bottom: 1rem;
+        }
+        
+        .project-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+            will-change: transform;
+        }
+        
+        .project:hover .project-video {
+            transform: scale(1.05);
+        }
+        
+        .project-title {
+            font-size: 0.85rem;
+            font-weight: 500;
+            line-height: 2.00;
+            margin-bottom: 0.4rem;
+            color: #000;
+        }
+        
+        .project-meta p {
+            font-size: 0.85rem;
+            font-weight: 400;
+            line-height: 1.80;
+            color: #000;
+            max-width: 56ch;
+        }
+        
+        /* Footer */
+        .footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+        }
+        
+        .footer div {
+            font-size: 0.85rem;
+            font-weight: 500;
+            line-height: 1.40;
+        }
+        
+        .footer a {
+            display: inline-block;
+            margin-bottom: 0.2rem;
+            text-decoration: underline !important;
+            border-bottom: none !important;
+        }
+        
+        /* Smooth animations */
+        .js-el {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .js-el.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .content {
+                margin-left: 1.5rem;
+                margin-right: 1.5rem;
+                padding: 1.5rem 0 4rem;
+            }
+            
+            .main-content {
+                padding-top: 2rem;
+            }
+            
+            .grid {
+                margin-top: 3rem;
+                gap: 2.5rem;
+            }
+        }
+        
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            .project-video,
+            .project:hover .project-video,
+            .js-el {
+                transition: none;
+            }
+        }
+    </style>
+    
+    <script>
+        // Enhanced Lenis configuration for smoother scrolling
+        const lenis = new Lenis({
+            duration: 0.85,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            direction: 'vertical',
+            gestureDirection: 'vertical',
+            smooth: true,
+            mouseMultiplier: 1,
+            smoothTouch: false,
+            touchMultiplier: 2,
+            infinite: false,
+        });
+        
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+        
+        // Video intersection observer
+        const videos = document.querySelectorAll('.project-video');
+        const videoObserver = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    const video = entry.target;
+                    if (entry.isIntersecting) {
+                        video.play().catch(() => {});
+                    } else {
+                        video.pause();
+                    }
+                });
+            },
+            {
+                threshold: 0.5,
+                rootMargin: '0px 0px -10% 0px'
+            }
+        );
+        
+        videos.forEach(video => videoObserver.observe(video));
+        
+        // Scroll animations
+        const animateElements = document.querySelectorAll('.js-el');
+        const scrollObserver = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            },
+            {
+                threshold: 0.1,
+                rootMargin: '0px 0px -5% 0px'
+            }
+        );
+        
+        animateElements.forEach(el => scrollObserver.observe(el));
+        
+        // Enhanced hover effects
+        document.querySelectorAll('.project').forEach(project => {
+            const video = project.querySelector('.project-video');
+            
+            project.addEventListener('mouseenter', () => {
+                if (video && !video.paused) {
+                    video.style.transform = 'scale(1.05)';
+                }
+            });
+            
+            project.addEventListener('mouseleave', () => {
+                if (video) {
+                    video.style.transform = 'scale(1)';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
