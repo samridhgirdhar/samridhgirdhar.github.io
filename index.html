@@ -11,7 +11,6 @@
   >
 
     <meta name="description" content="Trying">
-  </div>
     
     <!-- Custom font loading similar to original -->
     <style>
@@ -34,6 +33,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Dark mode toggle button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
     <div id="__next">
         <main>
             <div class="page">
@@ -55,39 +72,39 @@
                     </div>
                     
                     <div class="grid">
-                        <a href="https://i-d.co" target="_blank" rel="noopener noreferrer" class="project js-el">
+                        <a href="https://github.com/samridhgirdhar/CollabNetVisor" target="_blank" rel="noopener noreferrer" class="project js-el">
                             <div class="project-asset">
                                 <video class="project-video" 
-                                       src="https://player.vimeo.com/external/368674346.sd.mp4?s=ab3f68&profile_id=165" 
+                                       src="media/gifs/video.mp4" 
                                        loop muted preload="none" playsinline></video>
                             </div>
                             <div class="project-meta">
-                                <div class="project-title">i-D Magazine</div>
-                                <p>Antinomy collaborated closely with Bedford Media to bring i-D Magazine back to life with a newly revamped website. The new i-D.co adopts a visually-driven approach, embodying the essence of what i-D has always stood for: striking imagery and compelling storytelling, as Karlie Kloss, founder and chairwoman of Bedford Media, said.</p>
+                                <div class="project-title">CollabNetVisor</div>
+                                <p>CollabNetVisor is a research-grade analytics pipeline that explores, quantifies, and visualizes the collaborative dynamics of open-source software (OSS) communities, focusing on platforms like GitHub. By leveraging advanced network science and temporal analysis, CollabNetVisor unveils hidden structures, influential contributors, and evolutionary patterns within OSS networks, enabling maintainers and researchers to make data-driven decisions for sustainable growth and governance.</p>
                             </div>
                         </a>
                         
-                        <a href="https://neonrated.com" target="_blank" rel="noopener noreferrer" class="project js-el">
+                        <a href="" target="_blank" rel="noopener noreferrer" class="project js-el">
                             <div class="project-asset">
                                 <video class="project-video" 
-                                       src="https://player.vimeo.com/external/399137091.sd.mp4?s=bfec7&profile_id=165" 
+                                       src="media/msft.mp4" 
                                        loop muted preload="none" playsinline></video>
                             </div>
                             <div class="project-meta">
-                                <div class="project-title">NEON Rated</div>
-                                <p>27b designed and developed NEON's digital home—an immersive platform that showcases their award-winning films and offers exclusive merchandise drops. Built with a custom headless Shopify setup and powered by Next.js and Vercel, the site delivers high-performance streaming, e-commerce, and editorial experiences in one seamless interface. Trompe-l'œil.</p>
+                                <div class="project-title">Internship at Microsoft</div>
+                                <p>During my internship at Microsoft (summer of 2024) with the Azure Networking Software Load Balancer team, I got the chance to dive deep into the intricacies of large-scale software infrastructure. Emulating the production environment for testing and automating setup processes taught me how thoughtful engineering can simplify complex systems. Beyond technical growth, working alongside experienced engineers reinforced the importance of clarity, precision, and practical problem-solving. This experience didn't just enhance my technical skills—it shaped my perspective on what truly makes software reliable and maintainable.</p>
                             </div>
                         </a>
                         
                         <a href="https://singsing.movie" target="_blank" rel="noopener noreferrer" class="project js-el">
                             <div class="project-asset">
                                 <video class="project-video" 
-                                       src="https://player.vimeo.com/external/368674346.sd.mp4?s=ab3f68&profile_id=165" 
+                                       src="media/gogi.mp4" 
                                        loop muted preload="none" playsinline></video>
                             </div>
                             <div class="project-meta">
-                                <div class="project-title">Sing Sing</div>
-                                <p>27b collaborated with A24 on the release of SING SING. Learn about Rehabilitation Through the Arts, The Just Trust and watch the trailer at singsing.movie.</p>
+                                <div class="project-title">SentinelDrive</div>
+                                <p>Creating an AI assistant that helps drivers stay safe on the road was deeply fulfilling. I loved seeing how the system could pick up on subtle signs—like drowsiness or distraction—and respond naturally, almost like a companion watching out for you. Connecting it with sensors to alert drivers about blind spots made the experience even more chaotically interesting.</p>
                             </div>
                         </a>
                         
@@ -118,6 +135,26 @@
             padding: 0;
         }
         
+        :root {
+            /* Light mode colors */
+            --bg-color: #f8f8f8;
+            --text-color: #000;
+            --text-secondary: #333;
+            --border-color: #e1e1e1;
+            --video-bg: #e5e5e5;
+            --link-hover-border: currentColor;
+        }
+        
+        [data-theme="dark"] {
+            /* Dark mode colors */
+            --bg-color: #0a0a0a;
+            --text-color: #ffffff;
+            --text-secondary: #e5e5e5;
+            --border-color: #2a2a2a;
+            --video-bg: #1a1a1a;
+            --link-hover-border: currentColor;
+        }
+        
         html {
             font-size: 13px;
         }
@@ -126,11 +163,63 @@
             font-family: 'HelveticaNow', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
             font-size: 1rem;
             line-height: 2.00;
-            color: #333;
-            background: #f8f8f8;
+            color: var(--text-color);
+            background: var(--bg-color);
             font-weight: 400;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        /* Theme toggle button */
+        .theme-toggle {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            z-index: 1000;
+            background: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        
+        .theme-toggle:hover {
+            transform: scale(1.1);
+            border-color: var(--text-color);
+        }
+        
+        .theme-toggle svg {
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+        
+        .sun-icon {
+            opacity: 1;
+            transform: rotate(0deg) scale(1);
+        }
+        
+        .moon-icon {
+            opacity: 0;
+            transform: rotate(-90deg) scale(0.5);
+            position: absolute;
+        }
+        
+        [data-theme="dark"] .sun-icon {
+            opacity: 0;
+            transform: rotate(90deg) scale(0.5);
+        }
+        
+        [data-theme="dark"] .moon-icon {
+            opacity: 1;
+            transform: rotate(0deg) scale(1);
         }
         
         /* Layout */
@@ -144,8 +233,6 @@
             margin-left: clamp(3.5rem, 32.5vw, 500px);
             padding: 0 1.5rem 6rem;
         }
-    
-
         
         .main-content {
             padding-top: 3rem;
@@ -153,12 +240,12 @@
         
         /* Typography - Adjusted sizes and colors */
         .name {
-            margin-top:6.5rem;
+            margin-top: 6.5rem;
             font-size: 0.85rem;
             font-weight: 550;
             line-height: 2.00;
             margin-bottom: 1.5rem;
-            color: #000;
+            color: var(--text-color);
         }
         
         .intro-text {
@@ -167,16 +254,16 @@
             line-height: 1.90;
             margin-bottom: 1.6rem;
             max-width: 32ch;
-            color: #000;
+            color: var(--text-color);
         }
         
         .company-info {
-            margin-top:2rem;
+            margin-top: 2rem;
             font-size: 0.85rem;
             font-weight: 400;
             line-height: 2.00;
             margin-bottom: 2rem;
-            color: #000;
+            color: var(--text-color);
         }
         
         .contact-links {
@@ -184,7 +271,6 @@
             font-weight: 500;
             line-height: 1.60;
             margin-bottom: 0;
-            
         }
         
         .contact-links a {
@@ -196,18 +282,18 @@
         
         /* Links */
         a {
-            color: #000;
+            color: var(--text-color);
             text-decoration: none;
             border-bottom: 1px solid transparent;
-            transition: border-color 0.2s ease;
+            transition: border-color 0.2s ease, color 0.3s ease;
         }
         
         a:hover {
-            border-bottom-color: currentColor;
+            border-bottom-color: var(--link-hover-border);
         }
         
         .company-info a {
-            color: #000;
+            color: var(--text-color);
         }
         
         /* Grid layout */
@@ -223,10 +309,9 @@
             display: block;
             color: inherit;
             border: none;
-            padding-bottom: 2rem;                  /* space before the line */
-            border-bottom: 1px solid #e1e1e1;      /* hairline divider */
-            
-
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+            transition: border-color 0.3s ease;
         }
         
         .project:hover {
@@ -239,8 +324,9 @@
             aspect-ratio: 16 / 9;
             overflow: hidden;
             border-radius: 8px;
-            background: #e5e5e5;
+            background: var(--video-bg);
             margin-bottom: 1rem;
+            transition: background-color 0.3s ease;
         }
         
         .project-video {
@@ -260,14 +346,14 @@
             font-weight: 500;
             line-height: 2.00;
             margin-bottom: 0.4rem;
-            color: #000;
+            color: var(--text-color);
         }
         
         .project-meta p {
             font-size: 0.85rem;
             font-weight: 400;
             line-height: 1.80;
-            color: #000;
+            color: var(--text-color);
             max-width: 56ch;
         }
         
@@ -318,19 +404,45 @@
                 margin-top: 3rem;
                 gap: 2.5rem;
             }
+            
+            .theme-toggle {
+                top: 1.5rem;
+                right: 1.5rem;
+                width: 40px;
+                height: 40px;
+            }
         }
         
         /* Reduced motion */
         @media (prefers-reduced-motion: reduce) {
             .project-video,
             .project:hover .project-video,
-            .js-el {
+            .js-el,
+            body,
+            .theme-toggle,
+            .theme-toggle svg {
                 transition: none;
             }
         }
     </style>
     
     <script>
+        // Dark mode functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        
+        // Check for saved theme preference or default to light mode
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', savedTheme);
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+        
         // Enhanced Lenis configuration for smoother scrolling
         const lenis = new Lenis({
             duration: 0.85,
